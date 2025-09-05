@@ -31,6 +31,27 @@ The FMS Backend is a robust financial management system that handles:
 - **Automated communication** (email/Whatsapp SMS reminders)
 - **Background job processing** for PDF generation and email delivery
 
+## Project Structure Overview
+
+```
+server/
+├── api/ # API layer
+│ ├── routes/ # Express route handlers
+│ ├── middlewares/ # Custom middleware
+│ └── validators/ # Request validation schemas
+├── common/ # Shared utilities
+│ ├── helpers/ # Business logic utilities
+│ ├── interfaces/ # TypeScript interfaces
+│ ├── mailTemplates/ # Email templates
+│ └── EventStore.ts # Event definitions
+├── database/ # Data layer
+│ ├── dao/ # Data Access Objects
+│ └── schemas/ # Mongoose schemas
+├── services/ # Business logic layer
+└── docs/ # Documentation
+README.md                     # Main documentation with navigation
+```
+
 ## Support Document
 
 - **User Manual**: [fms end user manual](https://docs.google.com/document/d/141sh5Ca35eJvW42oneFnEJYT6xm6UmxDpWOQibs6ZJ0/edit?usp=sharing)

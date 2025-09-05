@@ -41,5 +41,7 @@ server/
 ├── database/ # Data layer
 │ ├── dao/ # Data Access Objects
 │ └── schemas/ # Mongoose schemas
-└── services/ # Business logic layer
+├── services/ # Business logic layer
+└── docs/ # Documentation
+README.md                     # Main documentation with navigation
 ```
