@@ -221,3 +221,21 @@
 	b2bGstNo: String (default: '')		//for b2b case
 }
 ```
+
+### CCR (Cancellation & Refund) Schema
+
+```typescript
+{
+	uniqueId: String (required, unique),		//unique identifier for CCR entry
+	bookingId: String (required),				//booking ID for which CCR is processed
+	paxCancelled: Number (required),			//number of passengers cancelled
+	creditNoteAmount: Number (default: 0),		//credit note amount issued
+	cancellationAmount: Number (required),		//cancellation charges amount
+	refundAmount: Number (required),			//refund amount to be processed
+	status: String (required),					//CCR status (APPROVED, PENDING, REJECTED)
+	lastUpdatedBy: String (required),			//who last updated the CCR entry
+	entryDate: Date (required),					//date when CCR entry was created
+	createdAt: Date (default: Date.now),		//record creation timestamp
+	updatedAt: Date (default: Date.now),		//record last update timestamp
+}
+```
