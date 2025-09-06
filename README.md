@@ -36,16 +36,16 @@ server/
 README.md                     # Main documentation with navigation
 ```
 
-# Getting Started
+## Getting Started
 
-## Prerequisites
+### Prerequisites
 
 - Node.js 18.x or higher
 - Yarn package manager
 - MongoDB 5.x or higher
 - Redis 6.x or higher
 
-## Installation
+### Installation
 
 ```bash
 # Clone the repository
@@ -61,7 +61,7 @@ yarn install
 yarn run dev
 ```
 
-## Environment Configuration
+### Environment Configuration
 
 Create `.env.development` file with required variables:
 
@@ -104,9 +104,9 @@ POSTMAN_COLLECTION_ID=your-collection-id
 REQUEST_LIMIT=100mb
 LOG_LEVEL=info
 ```
-# Technology Stack
+## Technology Stack
 
-## Backend Framework
+### Backend Framework
 
 - **Runtime**: Node.js 18
 - **Language**: TypeScript 4.6
@@ -114,14 +114,14 @@ LOG_LEVEL=info
 - **Validation**: Zod schema validation
 - **Authentication**: JWT with Redis session storage
 
-## Databases
+### Databases
 
 - **Primary Database**: MongoDB (FMS data)
 - **Secondary Database**: MongoDB (Bookings data)
 - **Cache & Sessions**: Redis
 - **File Storage**: AWS S3
 
-## External Integrations
+### External Integrations
 
 - **Payment Gateways**: Razorpay Webhook, Spreadsheets Multiple Banks (HDFC, RBL, HSBC)
 - **Google Sheets API**: Service Account authentication for bank data import
@@ -130,11 +130,11 @@ LOG_LEVEL=info
 - **WhatsApp API**: DoubleTick for customer notifications
 - **Cron Scheduling**: EasyCron for payment reminder automation
 
-## Background Processing
+### Background Processing
 
 - **Background Jobs**: Receipt generation, PDF creation, email delivery
 
-## Development Tools
+### Development Tools
 
 - **Package Manager**: Yarn
 - **Code Quality**: ESLint + Prettier
